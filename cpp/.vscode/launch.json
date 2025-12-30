@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Codeforces (Mac)",
+            "type": "cppdbg", 
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}", // Mac 通常不带 .exe
+            "args": ["<", "${workspaceFolder}/in.txt", ">", "${workspaceFolder}/out.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb", // Mac 默认使用 lldb 而非 gdb
+            "preLaunchTask": "C/C++: clang++ build active file" // 这里的名字必须和 tasks.json 一致
+        }
+    ]
+}
+

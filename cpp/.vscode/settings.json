@@ -1,0 +1,9 @@
+{
+    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+
+    // "files.autoSave": "afterDelay",
+    // "files.autoSaveDelay": 100,
+
+    "code-runner.saveFileBeforeRun": true,
+    "git.ignoreLimitWarning": true,
+}
