@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "editor.snippetSuggestions": "top"
+}

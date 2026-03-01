@@ -1,16 +1,18 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
-            "type": "lldb",
+            "name": "C/C++ Debug (Mac)",
+            "type": "cppdbg", 
             "request": "launch",
-            "program": "${workspaceRoot}/<your program>",
-            "args": [],
-            "cwd": "${workspaceRoot}"
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [], // 算竞初学者建议先留空，避免找不到 in.txt 报错
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build active file" // 确保与你的 tasks.json label 一致
         }
     ]
 }
